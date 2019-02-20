@@ -15,9 +15,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
+    @IBOutlet weak var diceLogo: UIImageView!
+    @IBOutlet weak var rollButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        diceLogo.layer.cornerRadius = 8.0 // take this off
+        diceLogo.clipsToBounds = true // take this off
+        rollButton.layer.cornerRadius = 30.0 // take this off
+        rollButton.clipsToBounds = true // take this off
         updateDiceImages()
     }
  
